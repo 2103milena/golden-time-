@@ -1,0 +1,48 @@
+.box-contact {
+    height: 60vh;
+    width: 70%;
+    background: linear-gradient(105deg, transparent 0%,
+                                        transparent 50%,
+                                        rgba($color-white, 0.85) 50%),
+                                        url('../../assets/img/contact_o.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3px;
+
+    @include respond(tab-port){
+        width: 95%;
+        background-size: cover;
+        
+    }
+
+    @include respond(phone){
+        width: 100%;
+        background: linear-gradient(105deg, rgba($color-secondary-header-2, 0.7) 0%,
+        
+        rgba($color-white, 0.9) 100%),
+        url('../../assets/img/contact_o.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        
+    }
+
+    &__part-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 4rem;
+        font-size: 2rem;
+        text-align: center;
+
+        @include respond(phone){
+            font-size: 3rem;
+            line-height: 7rem;
+            
+        }
+    }
+
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/box-contact";
+@import "components/button";
+@import "components/cards";
+@import "components/composition";
+@import "components/feature-box";
+
+@import "layout/grid2";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/home";

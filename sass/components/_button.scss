@@ -1,0 +1,52 @@
+.btn{
+    &:link, 
+    &:visited {
+        text-decoration: none;
+        text-transform: uppercase; 
+        transition: all .3s;
+    }
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-hover;     
+    }
+
+    &--light {
+        padding: 1.5rem;
+        background-color: $color-white;
+        border-radius: 50px;
+        font-size: $default-font-size; 
+    }
+
+    &__about{
+        margin-top: 5rem;
+        position: absolute;
+        text-decoration: underline;
+       font-family: 'Allura', cursive;
+       letter-spacing: 1rem;
+       font-weight: 700;
+
+            &:hover {
+                transform: translateY(-.5rem) scale(1.1);
+                box-shadow: 0 1rem 2rem rgba($color-black, .15);             
+            }
+    }
+
+    &--service {
+     display: block;
+     font-size: 2rem;
+     color: $color-white;
+     margin-top: 10rem;
+     font-weight: 700;
+     text-decoration: underline;
+     font-family: 'Allura', cursive;
+     letter-spacing: 1rem;
+
+        &:hover {
+            background-color: transparent;
+            transform: translateY(-0.7rem) scale(1.1);
+            text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+            color: $color-hover;
+        }
+    }
+}

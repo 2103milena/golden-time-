@@ -1,0 +1,61 @@
+.composition {
+    position: relative;
+    
+    &__photo{
+        width: 55%;
+        max-width: 34rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 2px;
+        position: absolute;
+        transition: all, .3s;
+
+        @include respond(tab-port){
+            // position: absolute;
+            width: 48%;
+        }
+
+        @include respond(phone){
+          display: none;
+        }
+
+        &-1 {
+            left: 0;
+            top: -2rem;
+
+            @include respond(tab-port){
+                top: 11rem
+            }
+        }
+        &-2 {
+            right: 0;
+            top: 5rem;
+
+            @include respond(tab-port){
+                top: 11rem;
+                // left: 43rem;
+            }
+
+            // @include respond(phone){
+            //   display: none;
+            
+            // }
+        }
+        &-3 {
+            left: 20%;
+            top: 20rem;
+
+            @include respond(tab-port){
+                // top: 11rem;
+                left: 18rem;
+            }
+        }
+
+        &:hover{
+        
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+    }
+
+    
+}
