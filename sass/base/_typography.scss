@@ -12,15 +12,18 @@ body{
     padding-bottom: 3rem;
     
     background: linear-gradient(to right bottom, $color-white, $color-secondary-header-2);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     color: transparent;
 
    &--main {
        font-size: $font-size-header;
        text-transform: uppercase;
-       animation: moveInRight 1s ease-out;
+    //    -webkit-animation: moveInRight 1s ease-out;
+    //    -moz-animation: moveInRight 1s ease-out;
+    //    animation: moveInRight 1s ease-out;
+    //    transform: translateX(-20rem);
+        
        font-weight: 700;
-
        @include respond(phone){
        font-size: 4.5rem;
        }
@@ -31,7 +34,7 @@ body{
        letter-spacing: 1.5rem;
        text-align: center;
        margin-bottom: 4rem;
-       animation: moveInLeft 1s ease-out;
+    //    animation: moveInLeft 1s ease-out;
        font-family: 'Allura', cursive;
    };
 
@@ -56,7 +59,7 @@ body{
 }
 
 .heading-service{
-    margin-top: 12rem;
+    margin-top: 8rem;
     background: linear-gradient(to right bottom, $color-white, $color-secondary-header-2);
     -webkit-background-clip: text;
     color: transparent;

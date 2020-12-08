@@ -1,61 +1,66 @@
 .composition {
-    position: relative;
-    
-    &__photo{
-        width: 55%;
-        max-width: 34rem;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-        border-radius: 2px;
-        position: absolute;
-        transition: all, .3s;
+        margin-top: 13rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
 
-        @include respond(tab-port){
-            // position: absolute;
-            width: 48%;
+        @include respond(tab-land){
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8rem;
         }
 
         @include respond(phone){
-          display: none;
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
         }
 
-        &-1 {
-            left: 0;
-            top: -2rem;
+    &__photo{    
+        width: 100%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: 5px;
+        transition: all, .3s;
+        position: relative;
 
-            @include respond(tab-port){
-                top: 11rem
-            }
-        }
-        &-2 {
-            right: 0;
-            top: 5rem;
 
-            @include respond(tab-port){
-                top: 11rem;
-                // left: 43rem;
-            }
-
-            // @include respond(phone){
-            //   display: none;
-            
-            // }
-        }
-        &-3 {
-            left: 20%;
-            top: 20rem;
-
-            @include respond(tab-port){
-                // top: 11rem;
-                left: 18rem;
-            }
-        }
-
-        &:hover{
-        
+            &:hover{
+            transform: scale(1.1);
             box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
             z-index: 20;
         }
-    }
 
-    
+        &-1 {
+            right: -5rem;
+            @include respond(phone){
+                right: 3rem;  
+            }
+        }
+
+        &-2 {
+            right: 5rem;
+            top: 12rem;
+
+            @include respond(phone){
+                right: -3rem;
+                top: -5rem;
+            }
+
+        }
+
+        &-3 {
+            right: -5rem;
+            @include respond(phone){
+                right: 3rem;  
+            }
+        }
+
+        &-4 {
+            right: 5rem;   
+            top: 12rem;
+
+            @include respond(phone){
+                right: -3rem;
+                top: -5rem;
+            }
+        }
+    }
+ 
 }

@@ -1,6 +1,6 @@
 .box-contact {
     height: 60vh;
-    width: 70%;
+    width: 80%;
     background: linear-gradient(105deg, transparent 0%,
                                         transparent 50%,
                                         rgba($color-white, 0.85) 50%),
@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 3px;
-
+    
     @include respond(tab-port){
         width: 95%;
         background-size: cover;

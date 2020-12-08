@@ -4,7 +4,6 @@
     align-items: center;
 }
 
-
 // Cards Carousel
 // ----------------------------------------------
 
@@ -19,11 +18,14 @@
     font-size: 2rem;
     perspective: 1000px;
     transform-origin: center;
+    font-weight: bold;
 
     @include respond(phone){
         width: 60%;
-        height: 45vw;
+        // height: 45vw;
         font-size: 1.5rem;
+        margin-bottom: 10rem;
+        
     }
   
       // This is the element that rotates with the animation
@@ -51,13 +53,15 @@
           left: 0;
           right: 0;
           bottom: 0;
-          width: 70vw;
+          width: 60vw;
           height: 60vw;
           max-width: 380px;
           max-height: 250px;
           box-shadow: 0 5px 20px rgba(0,0,0,.1);
           border-radius: 6px;
           transform-origin: center;
+          padding: 1rem;
+          text-align: center;
          
   
           &:nth-child(1) {

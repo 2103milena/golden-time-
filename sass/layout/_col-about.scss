@@ -1,0 +1,25 @@
+
+.column--about {
+    text-align: center;
+    padding: 1rem 10rem;
+
+    @include respond(tab-port){
+        padding: 1rem 5rem;
+    }
+
+    @include respond(phone){
+        padding: 0 5rem;
+    }
+
+
+        &__text-about {
+        font-size: $default-font-size;   
+    }
+}
+
+  
+  
+
+    
+
+  
