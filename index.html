@@ -7,22 +7,27 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 
+    <!-- AOS css library: -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />    
+
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Golden Time Beograd</title>
 </head>
 
 <body>
     <header class="header">
-        
+
         <div class="header__text-box">
-            <img class="header__logo"src="assets/img/logo_transparent.png" alt="logo">
+            <img class="header__logo" src="assets/img/logo_transparent.png" alt="logo">
             <div class="heading-primary">
-                <div class="heading-primary--main">Golden Time Beograd</div>
+                <div class="heading-primary--main" >Golden Time Beograd</div>
                 <div class="heading-primary--sub">Prestiž koji pokazuje vreme </div>
                 <a href="#contact" class="btn btn--light u-center-text">Kontaktirajte nas !</a>
             </div>
@@ -31,14 +36,14 @@
     <main>
         <section class="section-about">
             <div class="u-margin-big u-center-text">
-                <h2 class="heading-secondary">
+                <h2 class="heading-secondary" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" >
                     O nama
                 </h2>
             </div>
             <div class="column--about">
                 <div class="column--about__text-about">
                     <h3 class="u-margin-small">Casovnicarska radnja sa dugom tradicijom!</h3>
-                    <div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem vitae quasi cum ea. Numquam
                         dolorum sint alias perspiciatis, suscipit sapiente unde dolores cumque modi reprehenderit
                         recusandae obcaecati adipisci, ad libero architecto doloribus tempore delectus. Itaque, tempora
@@ -51,21 +56,21 @@
                 <div class="column--about__pics-about">
                     <div class="composition">
                         <img class="composition__photo composition__photo-1" src="assets/img/onama_o.jpg"
-                            alt="Photo-about">
+                            alt="Photo-about" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <img class="composition__photo composition__photo-2" src="assets/img/onama_n.jpg"
-                            alt="Photo-about">
+                            alt="Photo-about" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                         <img class="composition__photo composition__photo-3" src="assets/img/goldentime.jpg"
-                            alt="Photo-about">
-                            <img class="composition__photo composition__photo-4" src="assets/img/slika1_o.jpg"
-                            alt="Photo-about">
-                    </div> 
-                   
+                            alt="Photo-about" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <img class="composition__photo composition__photo-4" src="assets/img/slika1_o.jpg"
+                            alt="Photo-about" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                    </div>
+
                 </div>
             </div>
         </section>
         <section class="section-service">
             <div class="u-margin-big u-center-text">
-                <h2 class="heading-secondary heading-service">
+                <h2 class="heading-secondary heading-service" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     Usluge
                 </h2>
             </div>
@@ -103,12 +108,12 @@
         <section class="section-contact" id="contact">
             <div class="box-contact">
                 <div class="box-contact__part-1"></div>
-                <div class="box-contact__part-2">
+                <div class="box-contact__part-2" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div>
                         <b>Kontakt:<br /><br />
-                        Vladimir Jestrovic<br />
-                        goldentime@gmail.com<br />
-                        065 2886794</b>
+                            Vladimir Jestrovic<br />
+                            goldentime@gmail.com<br />
+                            065 2886794</b>
                     </div>
                 </div>
             </div>
@@ -122,7 +127,7 @@
                     <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                 </div>
                 <div class="footer__text__left">
-                   <small>Copyright &copy; 2020, all rights reserved</small> 
+                    <small>Copyright &copy; 2020, all rights reserved</small>
                 </div>
             </div>
         </footer>
@@ -130,6 +135,11 @@
 
     </main>
 
+    <!-- AOS js library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

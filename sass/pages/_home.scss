@@ -15,16 +15,16 @@
     height: 80vh;
     }   
 }
-
 .section-contact{
     height: 90vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     @include respond(phone){
     height: 60vh;
     }
 }
+
+
